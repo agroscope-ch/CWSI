@@ -112,7 +112,7 @@ calc_TcTa_L <- function(ra,
 }
 
 #' This function calculates the vapor pressure deficit (VPD) based on relative humidity and air temperature.
-
+#' @noRd
 calc_VPD <- function(rH, Ta) {
   e_sat_a <- ifelse(Ta > 0,
     0.61078 * exp((17.27 * Ta) / (Ta + 237.3)) * 1000,  # Pa
